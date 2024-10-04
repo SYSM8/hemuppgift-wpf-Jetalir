@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnGrid" Content="Grid" Grid.Column="0" Grid.Row="0" FontSize="30" Click="NavigateToGrid"/>
+        <Button x:Name="btnStack" Content="StackPanel" Grid.Column="1" Grid.Row="0"  FontSize="30" Click="NavigateToStack"/>
+        <Button x:Name="btnWrap" Content="WrapPanel" Grid.Column="0" Grid.Row="1" FontSize="30" Click="NavigateToWrap"/>
+        <Button x:Name="btnDock" Content="DockPanel" Grid.Column="1" Grid.Row="1" FontSize="30" Click="NavigateToDock"/>
     </Grid>
 </Window>

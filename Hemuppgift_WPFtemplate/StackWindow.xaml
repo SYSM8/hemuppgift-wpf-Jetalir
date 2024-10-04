@@ -1,0 +1,29 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.StackWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="StackWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal">
+            <RadioButton x:Name="btnHorizontal" Content="Horizontal" Margin="5" Click="btnHorizontal_Click"/>
+            <RadioButton x:Name="btnVertical" Content="Vertical" Margin="5" Click="btnVertical_Click"/>
+        </StackPanel>
+        <Grid Margin="0,50,0,0">
+        <ScrollViewer>
+            <StackPanel x:Name="SPOrientation" Orientation="Horizontal" Margin="0,50,0,0">
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
+                <Rectangle Fill="Orange" Width="90" Height="90" Margin="5"/>
+                <Rectangle Fill="Yellow" Width="80" Height="80" Margin="5"/>
+                <Rectangle Fill="LightGreen" Width="70" Height="70" Margin="5"/>
+                <Rectangle Fill="Green" Width="60" Height="60" Margin="5"/>
+                <Rectangle Fill="LightBlue" Width="50" Height="50" Margin="5"/>
+                <Rectangle Fill="Blue" Width="40" Height="40" Margin="5"/>
+                <Rectangle Fill="Black" Width="30" Height="30" Margin="5"/>
+            </StackPanel>
+        </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>

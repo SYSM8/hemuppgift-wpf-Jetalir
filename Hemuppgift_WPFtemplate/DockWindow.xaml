@@ -1,0 +1,22 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.DockWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="DockWindow" Height="450" Width="800">
+    <Grid x:Name="MainGrid">
+        <DockPanel x:Name="MainDock" LastChildFill="True">
+            <Button Content="Top" Margin="5" Height="30" Width="80" DockPanel.Dock="Top" />
+            <Button Content="Left" Margin="5" Height="30" Width="80" DockPanel.Dock="Left"/>
+            <Button Content="Right" Margin="5" Height="30" Width="80" DockPanel.Dock="Right"/>
+            <Button Content="Bottom" Margin="5" Height="30" Width="80" DockPanel.Dock="Bottom"/>
+            <DockPanel>
+                <Button x:Name="btnTrophy" Content="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" Height="30" Width="80" Click="Trophy_Click"/>
+
+            </DockPanel>
+
+        </DockPanel>
+    </Grid>
+</Window>
